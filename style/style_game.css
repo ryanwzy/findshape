@@ -1,0 +1,84 @@
+#finish {
+    display: none;
+    margin: 20px;
+    position: fixed;
+    left: 10px;
+    bottom: 70px;
+    transition:1s;
+}
+
+.help {
+    position: fixed;
+    bottom: 10px;
+    left:10px;
+    margin: 20px;
+}
+.rbcorner {
+
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: 20px;
+}
+.keyCode{
+    border-radius: 6px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: none;
+}
+
+
+#start {
+    border-radius: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: none;
+    transition: 0.2s;
+}
+
+#start:visited {
+    color: white;
+}
+
+#start:hover {
+    padding: 15px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: white;
+    color: black;
+}
+
+.ins {
+
+    color: white;
+}
+
+.Click a{
+    background:none;
+    color: white;
+    position: fixed;
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    transition:1s;
+    text-decoration: none;
+}
+.Click a:visited{
+    color: white;
+}
+.Click a:hover{
+    font-weight: 200;
+}
+.Click a:active{
+}

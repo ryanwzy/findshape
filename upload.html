@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <link rel="stylesheet" href="style/style_upload.css">
+    <title>Find Yourself!</title>
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-container" onclick="toggleHamMenu()">
+            <div id="top_bun" class="ham-layer"></div>
+            <div id="meat" class="ham-layer"></div>
+            <div id="bottom_bun" class="ham-layer"></div>
+        </div>
+    </header>
+    <div id="overlay">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="upload.html">Upload</a></li>
+                <li><a href="analysis.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <div style="text-align: center; color:white;">
+            <h2 style="font-weight:80;font-size:50px;">Congratulations!<br>
+       You have generated your own shape!
+     </h2></div>
+        <div style="display: flex;justify-content: center;"><img class="fakeimg" src="2.gif"></div>
+        <form class="row">
+            <div style="color:white">Name:
+                <input type="text" id="name">
+                <br>
+            </div>
+            <div style="width: 50px;"></div>
+            <div style="color: white"> City:
+                <input type="text" id="city">
+                <br>
+            </div>
+        </form>
+        <div class="row">
+            <div class="button">
+                <a href="game.html">Play Again</a>
+            </div>
+            <div style="width: 30px;"></div>
+            <div class="button"><a href="analysis.html">Share it!</a></div>
+        </div>
+        <div class="spacer"></div>
+    </div>
+    <div>
+        <script src="js/js-index.js"></script>
+    </div>
+</body>
+
+</html>

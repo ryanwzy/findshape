@@ -1,0 +1,86 @@
+@font-face {
+    font-family: a;
+    src: url(../abc.otf);
+}
+
+body {
+    font-family: a;
+    background-color: black;
+}
+
+.button {
+    margin: 20px;
+}
+
+.button a {
+    color: white;
+    background-color: none;
+    border-radius: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.button a:visited {
+    color: white;
+}
+
+.button a:hover {
+    padding: 12px;
+    border-style: none;
+    background-color: white;
+    color: black;
+}
+
+.bun {
+    width: 35px;
+    height: 7px;
+    background-color: black;
+    margin: 0 0;
+    position: relative;
+}
+
+.fakeimg {
+
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form {
+    margin: 20px;
+}
+
+input {
+    margin: 15px 0;
+}
+
+input[type=text] {
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 20px;
+    color: white;
+    transition: 0.2s;
+}
+
+input[type=text]:hover {
+    background-color: rgba(0, 200);
+}
+
+input[type=text]:activate {
+    background-color: black;
+}

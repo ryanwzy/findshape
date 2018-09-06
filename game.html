@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <link rel="stylesheet" href="style/style_game.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Find Your Shape!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.js"></script>
+    <script src="js/finalcode.js"></script>
+    <!-- <div><script src="js/finalcode.js"></script></div> -->
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-container" onclick="toggleHamMenu()">
+            <div id="top_bun" class="ham-layer"></div>
+            <div id="meat" class="ham-layer"></div>
+            <div id="bottom_bun" class="ham-layer"></div>
+        </div>
+    </header>
+    <div id="overlay">
+        <nav>
+            <ul>
+                <!-- hashtag is an internal link. without an element to point to, it just serves as a placeholder -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="upload.html">Upload</a></li>
+                <li><a href="analysis.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="finish" style="background-color:rgba(0,0,0,0);">
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        
+        <div style="margin-bottom:20px; id="description">
+           
+            <!-- neuroticism -->
+            <p class="ins">If you often worry about many different things, press 
+                <span class="keyCode">Q</span> , otherwise press 
+                <span class="keyCode">A</span></p>
+             <!-- extraversion -->
+            <p class="ins">If you want to be center of attention, press  <span class="keyCode">W</span> , otherwise press  <span class="keyCode">S</span> </p>
+            <!-- conscientiousness -->
+            <p class="ins">If you don't enjoy having a set schedule, press <span class="keyCode">E</span> , otherwise press <span class="keyCode">D</span></p>
+            <!-- agreeableness -->
+            <p class="ins">If you feel empathy and concern for other people, press <span class="keyCode">R</span> , otherwise press <span class="keyCode">F</span></p>
+            <!-- openness -->
+            <p class="ins">If you are creative or like to change, press <span class="keyCode">LEFT</span> or <span class="keyCode">RIGHT</span></p>
+            <p class="ins">Press <span class="keyCode">UP</span> and <span class="keyCode">DOWN</span> to control the line number </p> 
+             <p class="ins">Press <span class="keyCode"> SPACE</span> to reset</p>           
+        </div>
+       
+    </div>
+        <div id="start" class="help" onclick="toggleHelp()">How to Play</div>
+        <div class="Click"><a>Click here to start !</a> </div>
+        <a id="start" class="rbcorner" href="upload.html">Finish</a>
+
+    <script src="js/js-index.js"></script>
+</body>
+
+</html>

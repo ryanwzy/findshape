@@ -1,0 +1,155 @@
+@font-face {
+    font-family: a;
+    src: url(../abc.otf);
+}
+
+body {
+    /*  background-image: url("img/p1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw,100vw;*/
+    font-family: a;
+    margin: unset;
+}
+
+
+
+/* BACKGROUND STYLING */
+
+.header {
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 7vw;
+}
+
+.enter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    /* fixed position so if the page is scrollable, this still remains in the same position */
+    z-index: 5;
+    /* z index so its above the main webpage, yet under the hamburger icon */
+    height: 100%;
+    width: 100%;
+}
+
+.enter a {
+    border-radius: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: none;
+    transition: 0.2s;
+}
+
+.enter a:visited {
+    color: white;
+}
+
+.enter a:hover {
+    padding: 15px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: white;
+    color: black;
+}
+
+.webtitle {
+    font-weight: 500;
+    font-size: 46px;
+    text-transform: uppercase;
+    float: left;
+}
+
+.spacer {
+    height: 45px;
+}
+
+
+
+/* HAMBURGER ICON STYLING */
+
+.hamburger-container {
+    border-radius: 10px;
+    float: left;
+    z-index: 20;
+    /*give this a z index so that it remains on top and will be clickable above the overlay  */
+    position: fixed;
+    padding: 2vw;
+}
+
+#top_bun,
+#meat,
+#bottom_bun {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    position: relative;
+    margin-left: 0vw;
+}
+
+.hamburger-container div {
+    transition: 0.4s;
+}
+
+
+
+/* OVERLAY STYLING */
+
+#overlay {
+    height: 0vw;
+    width: 25vw;
+    position: fixed;
+    /* fixed position so if the page is scrollable, this still remains in the same position */
+    z-index: 10;
+    /* z index so its above the main webpage, yet under the hamburger icon */
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0.9;
+    overflow-x: hidden;
+    /*need tis to to prevent seeing the text when the overlay height is 0.*/
+    transition: 0.4s;
+}
+
+
+#overlay nav {
+    margin-top: 20vh;
+}
+
+
+#overlay li {
+    list-style-type: none;
+    display: block;
+    opacity: 100%;
+    text-align: left;
+    margin: 10px;
+}
+
+#overlay li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#hero {
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+#comfort {
+    text-align: center;
+}
